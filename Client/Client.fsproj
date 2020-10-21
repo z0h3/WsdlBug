@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FSharp.Data.WsdlProvider" Version="0.6.0-alpha" />
+      <PackageReference Include="System.ServiceModel.Http" Version="4.7.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CSServer\CSServer.csproj" />
+      <ProjectReference Include="..\Server\Server.fsproj" />
+    </ItemGroup>
+
+</Project>
